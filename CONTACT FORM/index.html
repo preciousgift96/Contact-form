@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+
+    <main>
+        <h1>Contact Us</h1>
+
+        <form action="https://example.com/submit" method="post">
+
+            <!-- Full Name -->
+            <div>
+                <label for="full-name">Full Name</label>
+                <input
+                    type="text"
+                    id="full-name"
+                    name="full_name"
+                    required
+                >
+            </div>
+
+            <br>
+
+            <!-- Email -->
+            <div>
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+            </div>
+
+            <br>
+
+            <!-- Subject -->
+            <div>
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="general-inquiry">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="business">Business Inquiry</option>
+                </select>
+            </div>
+
+            <br>
+
+            <!-- Message -->
+            <div>
+                <label for="message">Message</label>
+                <br>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    minlength="20"
+                    required
+                ></textarea>
+            </div>
+
+            <br>
+
+            <!-- How did you hear about us? -->
+            <fieldset>
+                <legend>How did you hear about us?</legend>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="google"
+                        name="referral"
+                        value="google"
+                        required
+                    >
+                    <label for="google">Google</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="social-media"
+                        name="referral"
+                        value="social-media"
+                    >
+                    <label for="social-media">Social Media</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="friend"
+                        name="referral"
+                        value="friend"
+                    >
+                    <label for="friend">Friend or Colleague</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="other"
+                        name="referral"
+                        value="other"
+                    >
+                    <label for="other">Other</label>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <!-- Newsletter -->
+            <div>
+                <input
+                    type="checkbox"
+                    id="newsletter"
+                    name="newsletter"
+                    value="yes"
+                >
+                <label for="newsletter">
+                    Subscribe me to the newsletter
+                </label>
+            </div>
+
+            <br>
+
+            <!-- Submit -->
+            <button type="submit">Send Message</button>
+
+        </form>
+    </main>
+
+</body>
+</html>
